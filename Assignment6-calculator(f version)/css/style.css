@@ -1,0 +1,92 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --light-grey: #d8d9db;
+    --buttons-on-hover: #ebebeb;
+    --button-active-state: #bbbcbe;
+    --function-buttons: #df974c;
+    --function-buttons-on-hover: #dfb07e;
+    --function-button-active-state: #dd8d37;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #ccc;
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 300px;
+    border: 1px solid black;
+}
+
+.screen {
+    width: 100%;
+    text-align: right;
+    background-color: black;
+    color: white;
+}
+
+.screen-value {
+    padding: 15px 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.btn {
+    width: 25%;
+    height: 50px;
+    background-color: var(--light-grey);
+    padding: 0;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: inherit;
+    transition: 400ms;
+}
+
+.btn:hover {
+    background-color: var(--buttons-on-hover);
+}
+
+.btn:focus {
+    outline: none;
+    background-color: var(--button-active-state);
+}
+
+.btn-func {
+    background: var(--function-buttons);
+    color: white;
+}
+
+.btn-func:hover {
+    background-color: var(--function-buttons-on-hover);
+}
+
+.btn-func:focus {
+    background-color: var(--function-button-active-state);
+}
+
+.clear {
+    width: 50%;
+}
+
+.zero {
+    width: 75%;
+}
+
+.double-zero {
+    width: 100%;
+}
